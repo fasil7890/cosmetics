@@ -1,0 +1,33 @@
+.imageslide {
+  overflow-x: hidden !important;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+}
+.imageslide-title {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.imageslide .swiper {
+  overflow: visible !important;
+}
+.imageslide-slider {
+  margin-top: 3rem;
+  width: 100%;
+}
+.imageslide-slider .swiper-slide {
+  width: 20rem;
+}
+.imageslide img {
+  width: 25rem;
+  height: 15rem;
+  filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -35px;
+}

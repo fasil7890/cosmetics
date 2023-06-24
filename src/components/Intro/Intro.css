@@ -1,0 +1,101 @@
+.intro {
+  display: flex;
+  
+  margin-top: 6rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.i-left {
+  display: flex;
+  position: relative;
+ 
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+.i-button {
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding:15px 30px 15px 30px;
+  background: palevioletred;
+  box-shadow: 0px 20px 24px 3px pink;
+  flex: 2;
+  width: 8rem;
+  
+}
+.i-button:hover {
+  background:white;
+  cursor: pointer;
+  color: palevioletred;
+  border: 1px solid palevioletred;
+}
+.i-text {
+  display: flex;
+  flex-direction: column;
+}
+.i-title {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 4rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.i-para {
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--gray);
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+.i-right {
+  flex: 1;
+  position: relative;
+  text-align: end;
+}
+.i-icons{
+  display: flex;
+  gap: 20px;
+}
+.i-icon{
+  font-size: 50px;
+  margin-right: 20px;
+  color:rgb(88, 91, 102);
+  border: 1px solid rgb(88, 91, 102);
+  border-radius: 10px;
+}
+.i-banner{
+  border-radius: 10px;
+  height: 600px;
+}
+.i-blur{
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+  filter: blur(72px);
+}
+
+@media screen and (max-width:480px) {
+  .intro{
+    flex-direction: column;
+    padding: 2rem;
+    gap: 7rem;
+  }
+  .i-title{
+    font-size: 3rem;
+  }
+  .i-right{
+    transform: scale(0.8);
+    left: -3rem;
+    
+  }
+  .i-para{
+    font-size: 20px;
+  }
+}
